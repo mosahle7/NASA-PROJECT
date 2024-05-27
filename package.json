@@ -15,12 +15,14 @@
     "watch": "npm run server & npm run client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "deploy": "npm run build --prefix client && npm start --prefix server",
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
     "test": "npm test --prefix server && npm test --prefix client"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
   },
   "dependencies": {
+    "mongoose": "^8.4.0",
     "morgan": "^1.10.0"
   }
 }
