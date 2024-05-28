@@ -4,7 +4,6 @@ const planetSchema = new mongoose.Schema({
     keplerName: {
         type: String,
         required: true,
-        unique: true,
     } 
 });
 
