@@ -38,7 +38,7 @@ async function httpAbortLaunch(req,res) {
                 error: 'Launch not aborted!',
             })
         }
-        return res.status(200).json({
+        return res.status(200).json({ 
             ok: true,
         })
         }
